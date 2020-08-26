@@ -5,6 +5,10 @@ namespace OWASP.WebGoat.NET.App_Code.DB
 {
     public class DummyDbProvider : IDbProvider
     {
+        public string getConnectionString()
+        {
+            return "_connectionString";
+        }
         
         public bool TestConnection()
         {

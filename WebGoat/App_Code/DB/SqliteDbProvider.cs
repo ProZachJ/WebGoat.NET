@@ -30,6 +30,11 @@ namespace OWASP.WebGoat.NET.App_Code.DB
                 SqliteConnection.CreateFile(_dbFileName);
         }
 
+        public string getConnectionString()
+        {
+            return _connectionString;
+        }
+
         public bool TestConnection()
         {   
             try

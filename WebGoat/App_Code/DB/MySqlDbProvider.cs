@@ -54,6 +54,10 @@ namespace OWASP.WebGoat.NET.App_Code.DB
 
         public string Name { get { return DbConstants.DB_TYPE_MYSQL; } }
         
+        public string getConnectionString()
+        {
+            return _connectionString;
+        }
 
         public bool TestConnection()
         {

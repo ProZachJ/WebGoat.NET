@@ -19,8 +19,8 @@ namespace OWASP.WebGoat.NET.WebGoatCoins
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            PanelError.Visible = false;
-
+            PanelError.Visible = true;
+            labelError.Text = du.getConnectionString(); 
             string returnUrl = Request.QueryString["ReturnUrl"];
             if (returnUrl != null)
             {

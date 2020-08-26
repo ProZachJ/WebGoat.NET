@@ -9,6 +9,8 @@ namespace OWASP.WebGoat.NET.App_Code.DB
 
         bool TestConnection();
 
+        string getConnectionString();
+
         DataSet GetCatalogData();
 
         bool IsValidCustomerLogin(string email, string password);
