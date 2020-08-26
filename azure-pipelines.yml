@@ -27,7 +27,7 @@ stages:
         containerRegistry: 'Harbor'
         repository: $(dockerRepository)
         command: 'buildandpush'
-        Dockerfile: '**/dockerfile'
+        Dockerfile: '**/Dockerfile'
         tags: | 
           $(imageTag)
           latest
